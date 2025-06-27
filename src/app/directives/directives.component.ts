@@ -24,4 +24,5 @@ export class DirectivesComponent {
   {productName:'Laptop',price:150000,rating:3.9},
 
  ]
+ date:any=new Date();
 }
