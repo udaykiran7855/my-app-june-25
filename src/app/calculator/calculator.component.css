@@ -1,0 +1,19 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(168, 168, 203);
+    margin: 100px 0 0 250px;
+    text-align: center;
+    padding: 10px;
+}
+input{
+    margin:10px
+
+}
+button{
+    background-color: bisque;
+    color: brown;
+    width: 80px;
+    height: 25px;
+    margin: 30px;
+}

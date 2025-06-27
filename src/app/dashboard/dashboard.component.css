@@ -1,0 +1,25 @@
+body{
+    margin: 0
+
+}
+
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+
+}
+.left{
+    width: 20%;
+    height: 100%;
+    background-color:aquamarine ;
+    overflow: auto;
+
+}
+.right{
+    width: 80%;
+    height: 100%;
+    background-color: antiquewhite;
+    overflow: auto;
+}

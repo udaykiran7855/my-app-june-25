@@ -1,0 +1,42 @@
+<h1>directives</h1>
+
+
+<h2 *ngIf="true">Hello Everyone</h2>
+<h2 *ngIf="false">Good Morning</h2>
+
+<!--<ol>
+    <li>Andhra Pradesh</li>
+     <li>Telangana</li>
+      <li>Tamilnadu</li>
+       <li>Kerala</li>
+        <li>Karnataka</li>
+</ol><br>
+
+<ol>
+    <li *ngFor="let state of states">{{state}}</li>
+
+</ol><br>
+<select >
+    <option *ngFor="let state of states">{{state}}</option>
+</select>
+
+<h4 *ngFor="let age of ages">{{age}}</h4>-->
+
+<table class="table table-info">
+<thead>
+    <tr>
+        <th>product Name</th>
+        <th>product Price</th>
+        <th>product Rating</th>
+
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let product of products">
+    <td>{{product.productName}}</td>
+    <td [ngStyle]="{'color':product.price>15000?'red':'green'}">{{product.price}}</td>
+    <td [ngClass]="{'red':product.rating<2.5,'yellow':((product.rating>=2.5)&&(product.rating<4)),'green':product.rating>4}">{{product.rating}}</td>
+
+    </tr>
+</tbody>
+</table>
