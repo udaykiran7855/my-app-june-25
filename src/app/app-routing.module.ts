@@ -8,6 +8,7 @@ import { ClockComponent } from './clock/clock.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
       {path:'calculator',component:CalculatorComponent}, 
       {path:'data-binding',component:DataBindingComponent},
       {path:'directives',component:DirectivesComponent},
+      {path:'jobs', component:JobsComponent}
 
 
   ]},
