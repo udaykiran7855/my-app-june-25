@@ -1,0 +1,21 @@
+<h1>Vehicles</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Vehicle Name</th>
+            <th>Color</th>
+            <th>Cost</th>
+            <th>Fuel</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vehicle of vehicles">
+            <td>{{vehicle.Vehicle}}</td>
+            <td>{{vehicle.color}}</td>
+            <td>{{vehicle.cost}}</td>
+            <td>{{vehicle.fuel}}</td>
+            <td><img src="{{vehicle.image}}" alt="" height="50px" width="50px"></td>
+        </tr>
+    </tbody>
+</table>

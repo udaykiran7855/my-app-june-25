@@ -13,6 +13,14 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { JobsComponent } from './jobs/jobs.component';
+import { ApplicationComponent } from './application/application.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+    import { HttpClientModule } from '@angular/common/http';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { MailComponent } from './mail/mail.component';
+import { ImageComponent } from './image/image.component';
+import { MapsComponent } from './maps/maps.component';
+import { WeatherComponent } from './weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +33,20 @@ import { JobsComponent } from './jobs/jobs.component';
     CalculatorComponent,
     DataBindingComponent,
     DirectivesComponent,
-    JobsComponent
+    JobsComponent,
+    ApplicationComponent,
+    VehiclesComponent,
+    FlipkartComponent,
+    MailComponent,
+    ImageComponent,
+    MapsComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

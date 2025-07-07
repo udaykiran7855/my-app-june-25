@@ -1,0 +1,8 @@
+<h1>Gmail</h1>
+<div class="main">
+<ol>
+    <li *ngFor="let mails of mail" [ngStyle]="{'color':mails.completed==false?'black':'gray'}">{{mails.title}}</li>
+</ol>
+</div>
+
+    

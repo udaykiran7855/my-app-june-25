@@ -9,6 +9,13 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { JobsComponent } from './jobs/jobs.component';
+import { ApplicationComponent } from './application/application.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { MailComponent } from './mail/mail.component';
+import { ImageComponent } from './image/image.component';
+import { MapsComponent } from './maps/maps.component';
+import { WeatherComponent } from './weather/weather.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -19,7 +26,15 @@ const routes: Routes = [
       {path:'calculator',component:CalculatorComponent}, 
       {path:'data-binding',component:DataBindingComponent},
       {path:'directives',component:DirectivesComponent},
-      {path:'jobs', component:JobsComponent}
+      {path:'jobs', component:JobsComponent},
+      {path:'application', component:ApplicationComponent},
+      {path:'vehicles' , component:VehiclesComponent},
+      {path:'flipkart' , component:FlipkartComponent},
+      {path:'mail' , component:MailComponent},
+      {path:'image' , component:ImageComponent},
+      {path:'maps' , component:MapsComponent},
+       {path:'weather' , component:WeatherComponent}
+
 
 
   ]},

@@ -1,0 +1,11 @@
+<h1>Online shopping</h1>
+<div class="parent">
+    <div class="card" *ngFor=" let images of image">
+        <img src="{{images.download_url}}" alt="" width="100%" height="100%">
+        <div class="download">
+             <p>{{images.author}}</p>
+        <a href="{{images.url}}" target="_blank" ><button button class="btn btn-outline-primary">Download</button></a>
+</div>
+    </div>
+
+</div>

@@ -1,0 +1,11 @@
+<div class="parent">
+    <div class="middle" *ngFor="let weathers of weather">
+        <h1>Weather in Hyderabad</h1>
+        <div class="circle" [ngClass]=""></div>
+            <h1>{{weathers.current_weather.temperature}}{{weathers.current_weather_units.temperature}}</h1>
+            <h3>wind Speed:{{weathers.current_weather.windspeed}}{{weathers.current_weather_units.windspeed}}</h3>
+             <h3>wind Direction:{{weathers.current_weather.winddirection}}{{weathers.current_weather_units.winddirection}}</h3>
+             <h3>Daytime</h3>
+    </div>
+
+</div> 

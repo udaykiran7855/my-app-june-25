@@ -1,0 +1,52 @@
+<h1>application</h1>
+<input type="text" [(ngModel)]="check" (keyup)="search()">
+<button   class="btn btn-sm btn-primary me-2" (click)="pricelow()">Price Low to High</button>
+<button class="btn btn-sm btn-primary" (click)="pricehigh()">Price High to Low</button>
+<button  class="btn btn-sm btn-primary me-2"  (click)="ratinglow()">Rating Low to High</button>
+<button class="btn btn-sm btn-primary" (click)="ratinghigh()">Rating High to Low</button><br>
+<button (click)="apply()">Apply 50% discount</button><br>
+<button (click)="free()">OnlyFreeDelivery</button>
+<button (click)="totalcost()"> Total Price</button>
+<button (click)="totalitems()">Total Cart items</button><br>
+<button (click)="charge()">Price with DeliveryCharge</button>
+<label>Name:</label>
+<input type="text" [(ngModel)]="itname"><br>
+<label>Price:</label>
+<input type="number"  [(ngModel)]="itprice"><br>
+<label>Rating:</label>
+<input type="text" [(ngModel)]="itrating" ><br>
+<label>FreeDelivery:</label>
+<input type="radio" name="freeDelivery"[(ngModel)]="itdelivery" value="True"> Yes
+<input type="radio" name="freeDelivery" [(ngModel)]="itdelivery" value="False"> No <br>
+<button (click)="add()">Add to cart</button>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>S.no</th>
+            <th>ProductName</th>
+            <th>Price</th>
+            <th>Rating</th>
+            <th>FreeDelivery</th>
+            <th>Actions</th>
+
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of items; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{item.ProductName}}</td>
+            <td>{{item.Price}}</td>
+            <td>{{item.Rating}}</td>
+            <td>{{item.FreeDelivery}}</td>
+            <td>
+                <button class="btn btn-danger" (click)="delete(i)">
+                    Delete
+                </button>
+            </td>
+        </tr>
+
+    </tbody>
+
+</table>
