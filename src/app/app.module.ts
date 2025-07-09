@@ -10,7 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ClockComponent } from './clock/clock.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { ApplicationComponent } from './application/application.component';
@@ -21,6 +21,9 @@ import { MailComponent } from './mail/mail.component';
 import { ImageComponent } from './image/image.component';
 import { MapsComponent } from './maps/maps.component';
 import { WeatherComponent } from './weather/weather.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
 
 @NgModule({
   declarations: [
@@ -40,13 +43,17 @@ import { WeatherComponent } from './weather/weather.component';
     MailComponent,
     ImageComponent,
     MapsComponent,
-    WeatherComponent
+    WeatherComponent,
+    VehicleDetailsComponent,
+    StudentDetailsComponent,
+    CreateStudentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

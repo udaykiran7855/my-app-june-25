@@ -1,0 +1,16 @@
+<h1>Student Details</h1>
+<div class="parent">
+  <div *ngFor="let student of studentdetails"  class="card">
+    <div>
+      <img src="{{student.profile_picture}}" alt="">
+
+    </div>
+    <div>
+      <h2>{{student.school_name}}</h2>
+    </div>
+       <p>{{student.name}}</p>
+       <p>{{student.city}}</p>
+  </div>
+
+
+</div>

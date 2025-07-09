@@ -16,6 +16,9 @@ import { MailComponent } from './mail/mail.component';
 import { ImageComponent } from './image/image.component';
 import { MapsComponent } from './maps/maps.component';
 import { WeatherComponent } from './weather/weather.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -33,12 +36,15 @@ const routes: Routes = [
       {path:'mail' , component:MailComponent},
       {path:'image' , component:ImageComponent},
       {path:'maps' , component:MapsComponent},
-       {path:'weather' , component:WeatherComponent}
+       {path:'weather' , component:WeatherComponent},
+       {path:'vehicle-details/:id' , component:VehicleDetailsComponent},
+       {path:'edit-vehicle/:id' ,component:VehiclesComponent},
+       {path:'student-details' , component:StudentDetailsComponent},
+       {path:'create-student', component:CreateStudentComponent}
 
 
 
   ]},
-
   {path:'**',component:PageNotFoundComponent},
 
 ];

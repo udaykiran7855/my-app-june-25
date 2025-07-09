@@ -1,0 +1,29 @@
+.parent{
+  
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+
+}
+.card{
+  background-color: rgb(238, 144, 210);
+  height: 50%;
+  width: 30%;
+  padding: 30px;
+  margin: 10px;
+  
+
+}
+img{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+h2{
+  background-color: rgb(205, 94, 50);
+  display: flex;
+  flex-wrap: wrap;
+}
