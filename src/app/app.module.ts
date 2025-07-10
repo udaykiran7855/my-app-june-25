@@ -15,7 +15,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { ApplicationComponent } from './application/application.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
-    import { HttpClientModule } from '@angular/common/http';
+    import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { MailComponent } from './mail/mail.component';
 import { ImageComponent } from './image/image.component';
@@ -24,6 +24,10 @@ import { WeatherComponent } from './weather/weather.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
+import { CapitalDirective } from './capital.directive';
+import { RupeePipe } from './rupee.pipe';
+import { AuthInterceptor } from './auth.interceptor';
+import { AboutUsModule } from './about-us/about-us.module';
 
 @NgModule({
   declarations: [
@@ -46,16 +50,25 @@ import { CreateStudentComponent } from './create-student/create-student.componen
     WeatherComponent,
     VehicleDetailsComponent,
     StudentDetailsComponent,
-    CreateStudentComponent
+    CreateStudentComponent,
+    CapitalDirective,
+    RupeePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutUsModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide:HTTP_INTERCEPTORS,
+      useClass:AuthInterceptor,
+      multi:true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
