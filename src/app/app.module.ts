@@ -28,6 +28,11 @@ import { CapitalDirective } from './capital.directive';
 import { RupeePipe } from './rupee.pipe';
 import { AuthInterceptor } from './auth.interceptor';
 import { AboutUsModule } from './about-us/about-us.module';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +57,12 @@ import { AboutUsModule } from './about-us/about-us.module';
     StudentDetailsComponent,
     CreateStudentComponent,
     CapitalDirective,
-    RupeePipe
+    RupeePipe,
+    ParentComponent,
+    ChildComponent,
+    Sibling1Component,
+    Sibling2Component,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
