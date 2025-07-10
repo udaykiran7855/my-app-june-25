@@ -26,6 +26,9 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +53,10 @@ import { ChildComponent } from './child/child.component';
     StudentDetailsComponent,
     CreateStudentComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    Sibling1Component,
+    Sibling2Component,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

@@ -20,13 +20,13 @@
 }
 
 .rating{
-    width: 50px;
+    width: 100px;
     height: 20px;
-    background-color: rgb(119, 0, 255);
-    color: beige;
+    background-color: rgb(0, 255, 38);
+    color: rgb(242, 242, 11);
     opacity: 0.5;
     position: absolute;
     text-align: center;
-    bottom: 40%;
+    bottom: 50%;
     left: 4%;
 }
