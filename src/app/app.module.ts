@@ -33,6 +33,7 @@ import { ChildComponent } from './child/child.component';
 import { Sibling1Component } from './sibling1/sibling1.component';
 import { Sibling2Component } from './sibling2/sibling2.component';
 import { RatingComponent } from './rating/rating.component';
+import { CreateIdComponent } from './create-id/create-id.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { RatingComponent } from './rating/rating.component';
     ChildComponent,
     Sibling1Component,
     Sibling2Component,
-    RatingComponent
+    RatingComponent,
+    CreateIdComponent
   ],
   imports: [
     BrowserModule,

@@ -21,9 +21,9 @@
 
 .rating{
     width: 100px;
-    height: 20px;
-    background-color: rgb(0, 255, 38);
-    color: rgb(242, 242, 11);
+    height: 30px;
+    background-color: #0505045e;
+    color: rgb(31, 31, 30);
     opacity: 0.5;
     position: absolute;
     text-align: center;
