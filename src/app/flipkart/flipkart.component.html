@@ -6,8 +6,9 @@
         <h3>{{cart.category}}</h3>
         <p>{{cart.title}}</p>
         <p style="color: red; padding-left: 10px;">{{cart.price}}</p>
-        <div class="rating">{{cart.rating.rate}}</div>
-
+        <div class="rating">
+       <app-rating [rating]="cart.rating.rate"></app-rating>
+       </div>
     </div>  
     
 

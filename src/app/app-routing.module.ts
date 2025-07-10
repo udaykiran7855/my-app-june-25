@@ -19,6 +19,9 @@ import { WeatherComponent } from './weather/weather.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
+import { ParentComponent } from './parent/parent.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -40,7 +43,11 @@ const routes: Routes = [
        {path:'vehicle-details/:id' , component:VehicleDetailsComponent},
        {path:'edit-vehicle/:id' ,component:VehiclesComponent},
        {path:'student-details' , component:StudentDetailsComponent},
-       {path:'create-student', component:CreateStudentComponent}
+       {path:'create-student', component:CreateStudentComponent},
+       {path:'parent' , component:ParentComponent},
+       {path:'sibling1', component:Sibling1Component},
+       {path:'sibling2', component:Sibling2Component},
+       
 
 
 
