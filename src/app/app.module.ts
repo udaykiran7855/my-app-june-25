@@ -34,6 +34,10 @@ import { Sibling1Component } from './sibling1/sibling1.component';
 import { Sibling2Component } from './sibling2/sibling2.component';
 import { RatingComponent } from './rating/rating.component';
 import { CreateIdComponent } from './create-id/create-id.component';
+import { AdminComponent } from './admin/admin.component';
+import { UserComponent } from './user/user.component';
+import { StoreModule } from '@ngrx/store';
+import { countReducer } from './store/counter.reducer';
 
 @NgModule({
   declarations: [
@@ -64,7 +68,9 @@ import { CreateIdComponent } from './create-id/create-id.component';
     Sibling1Component,
     Sibling2Component,
     RatingComponent,
-    CreateIdComponent
+    CreateIdComponent,
+    AdminComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +78,8 @@ import { CreateIdComponent } from './create-id/create-id.component';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    AboutUsModule
+    AboutUsModule,
+    StoreModule.forRoot({counter:countReducer}, {})
   ],
   providers: [
     {
