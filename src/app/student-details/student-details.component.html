@@ -1,16 +1,60 @@
-<h1>Student Details</h1>
-<div class="parent">
-  <div *ngFor="let student of studentdetails"  class="card">
-    <div>
-      <img src="{{student.profile_picture}}" alt="">
+<div class="header">
+<h1 style="text-align: center;">Student details</h1>
+<input type="text" [(ngModel)]="term" placeholder="Search Student" (keyup)="search()">
+<select [(ngModel)]="column">
+  <option value="name">Name</option>
+  <option value="dob">Date of Birth</option>
+  <option value="email">Email</option>
+  <option value="phone">Phone</option>
+</select>
 
-    </div>
-    <div>
-      <h2>{{student.school_name}}</h2>
-    </div>
-       <p>{{student.name}}</p>
-       <p>{{student.city}}</p>
+<select [(ngModel)]="order">
+  <option value="">Low to High</option>
+  <option value="">High to Low</option>
+</select>
+<button class="btn btn-info" (click)="sort()">Sort</button>
+
+<select [(ngModel)]="order">
+  <option value="">10</option>
+  <option value="">20</option>
+  <option value="">25</option>
+  <option value="">30</option>
+</select>
+
+<select [(ngModel)]="page">
+  <option value="">1</option>
+  <option value="">2</option>
+  <option value="">3</option>
+  <option value="">4</option>
+</select>
+
+<button class="btn btn-warning" (click)="pagination()">pagination</button>
+<button class="btn btn-success" routerLink="/dashboard/create-id">Create Student</button>
+
+</div>
+
+<div class="parent1">
+<div class="card" *ngFor="let students of student">
+  <div class="top">
+    <h4>VVIT internlationall school</h4>
+    <address>Nambur(V),pedakakani(M),Guntur(D) Pincode:522509</address>
   </div>
-
-
+  <div class="middle">
+    <div>
+      <h5>Admission year 2024-2025</h5>
+    <h5>Name:{{students.name}}</h5>
+    <h5>Date of Birth:{{students.dob}}</h5>
+    <h5>Email:{{students.email}}</h5>
+    <h5>phone:{{students.phone}}</h5>
+    </div>
+    <div>
+      <img src="{{students.profile_picture}}" alt="img" >
+    </div>
+  </div>
+  <div class="bottom">
+    <button style="margin: 2% 10% 0 5% ;" class="btn btn-dark">View</button>
+    <button style="margin: 2% 10% 0 5%;" class="btn btn-info">Edit</button>
+    <button style="margin: 2% 10% 0 5%;" class="btn btn-danger" (click)="delete(students.id)">Delete</button>
+  </div>
+</div>
 </div>
